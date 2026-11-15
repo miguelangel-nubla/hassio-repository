@@ -19,6 +19,19 @@ compared to installing any other Home Assistant add-on.
 
 ## Add-ons provided by this repository
 
+### &#10003; [Canal de Isabel II session helper][addon-canal-session-helper]
+
+![Latest Version][canal-session-helper-version-shield]
+![Supports armhf Architecture][canal-session-helper-armhf-shield]
+![Supports armv7 Architecture][canal-session-helper-armv7-shield]
+![Supports aarch64 Architecture][canal-session-helper-aarch64-shield]
+![Supports amd64 Architecture][canal-session-helper-amd64-shield]
+![Supports i386 Architecture][canal-session-helper-i386-shield]
+
+A browser where you log in to the Canal de Isabel II virtual office; it keeps the session and hands it to the integration
+
+[:books: Canal de Isabel II session helper add-on documentation][addon-doc-canal-session-helper]
+
 ### &#10003; [step-ca-client][addon-step-ca-client]
 
 ![Latest Version][step-ca-client-version-shield]
@@ -50,6 +63,7 @@ You could open an issue here on GitHub. Note, we use a separate
 GitHub repository for each add-on. Please ensure you are creating the issue
 on the correct GitHub repository matching the add-on.
 
+- [Open an issue for the add-on: Canal de Isabel II session helper][canal-session-helper-issue]
 - [Open an issue for the add-on: step-ca-client][step-ca-client-issue]
 
 For a general repository issue or add-on ideas [open an issue here][issue]
@@ -82,6 +96,15 @@ SOFTWARE.
 
 [addon-add-repo]: https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2Fmiguelangel-nubla%2Fhassio-repository
 [addon-add-repo-badge]: https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg
+[addon-canal-session-helper]: https://github.com/miguelangel-nubla/homeassistant_canal_isabel_II/tree/v2026.11.0
+[addon-doc-canal-session-helper]: https://github.com/miguelangel-nubla/homeassistant_canal_isabel_II/blob/v2026.11.0/README.md
+[canal-session-helper-issue]: https://github.com/miguelangel-nubla/homeassistant_canal_isabel_II/issues
+[canal-session-helper-version-shield]: https://img.shields.io/badge/version-v2026.11.0-blue.svg
+[canal-session-helper-aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
+[canal-session-helper-amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
+[canal-session-helper-armhf-shield]: https://img.shields.io/badge/armhf-no-red.svg
+[canal-session-helper-armv7-shield]: https://img.shields.io/badge/armv7-no-red.svg
+[canal-session-helper-i386-shield]: https://img.shields.io/badge/i386-no-red.svg
 [addon-step-ca-client]: https://github.com/miguelangel-nubla/hassio-step-ca-client/tree/v1.0.4
 [addon-doc-step-ca-client]: https://github.com/miguelangel-nubla/hassio-step-ca-client/blob/v1.0.4/README.md
 [step-ca-client-issue]: https://github.com/miguelangel-nubla/hassio-step-ca-client/issues
