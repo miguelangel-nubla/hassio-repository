@@ -96,8 +96,8 @@ SOFTWARE.
 
 [addon-add-repo]: https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2Fmiguelangel-nubla%2Fhassio-repository
 [addon-add-repo-badge]: https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg
-[addon-canal-session-helper]: https://github.com/miguelangel-nubla/homeassistant_canal_isabel_II/tree/v2026.11.0
-[addon-doc-canal-session-helper]: https://github.com/miguelangel-nubla/homeassistant_canal_isabel_II/blob/v2026.11.0/README.md
+[addon-canal-session-helper]: https://github.com/miguelangel-nubla/homeassistant_canal_isabel_II/tree/v2026.11.0/canal-session-helper
+[addon-doc-canal-session-helper]: https://github.com/miguelangel-nubla/homeassistant_canal_isabel_II/blob/v2026.11.0/canal-session-helper/DOCS.md
 [canal-session-helper-issue]: https://github.com/miguelangel-nubla/homeassistant_canal_isabel_II/issues
 [canal-session-helper-version-shield]: https://img.shields.io/badge/version-v2026.11.0-blue.svg
 [canal-session-helper-aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
@@ -105,8 +105,8 @@ SOFTWARE.
 [canal-session-helper-armhf-shield]: https://img.shields.io/badge/armhf-no-red.svg
 [canal-session-helper-armv7-shield]: https://img.shields.io/badge/armv7-no-red.svg
 [canal-session-helper-i386-shield]: https://img.shields.io/badge/i386-no-red.svg
-[addon-step-ca-client]: https://github.com/miguelangel-nubla/hassio-step-ca-client/tree/v1.0.4
-[addon-doc-step-ca-client]: https://github.com/miguelangel-nubla/hassio-step-ca-client/blob/v1.0.4/README.md
+[addon-step-ca-client]: https://github.com/miguelangel-nubla/hassio-step-ca-client/tree/v1.0.4/step-ca-client
+[addon-doc-step-ca-client]: https://github.com/miguelangel-nubla/hassio-step-ca-client/blob/v1.0.4/step-ca-client/DOCS.md
 [step-ca-client-issue]: https://github.com/miguelangel-nubla/hassio-step-ca-client/issues
 [step-ca-client-version-shield]: https://img.shields.io/badge/version-v1.0.4-blue.svg
 [step-ca-client-aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
