@@ -5,3 +5,7 @@ addons:
     repository: miguelangel-nubla/hassio-step-ca-client
     target: step-ca-client
     image: ghcr.io/miguelangel-nubla/step-ca-client/{arch}
+  canal-session-helper:
+    repository: miguelangel-nubla/homeassistant_canal_isabel_II
+    target: canal-session-helper
+    image: ghcr.io/miguelangel-nubla/canal-session-helper
