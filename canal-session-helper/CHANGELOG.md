@@ -1,17 +1,20 @@
-## Breaking
+## Integration
 
-Hourly consumption is now stored as the statistic **Canal de Isabel II `<contract>`** (`canal_de_isabel_ii:consumption_<contract>`), and the old "Total" entity is removed. Select the water source in the Energy panel again once.
+- A setup that cannot read the portal now loads anyway, keeps the session alive and tries again in 10 minutes, instead of retrying the whole setup every minute or so.
+- The periodic download no longer stops when there are no sensors, and the sensors appear when data first arrives.
+- Only a redirect to the login page counts as the end of a session. Other answers from the portal (maintenance, errors) no longer mark a live session as ended.
+- Adding or renewing a session now tells "the portal did not accept it" apart from "the portal could not be reached". Renewing no longer downloads the whole year again.
+- Two downloads in a row no longer restart the running total.
+- Errors while asking for hourly data or downloading the CSV are reported instead of importing nothing.
+- Canal de Isabel II icon and logo.
 
-## Fixed
+## Session helper (container and add-on)
 
-- Connections failing with `CERTIFICATE_VERIFY_FAILED` since the portal renewed its certificate on 2026-11-10: its server no longer sends the intermediate certificate, which is now bundled.
-- Negative bars in the Energy panel: each import continues the stored series.
+- The session survives a restart of the container or the browser.
+- Waiting for a login no longer reloads the page every few seconds, and the "login needed" notification is retried if Home Assistant was not reachable.
+- As an add-on, only Home Assistant itself can reach the logged-in browser.
+- A restarted container starts cleanly.
 
-## New
+## Known limitations
 
-- The first download imports the last year of hourly consumption; later ones re-read the last 30 days, so late readings and gaps fill in by themselves.
-- Meter reading sensor (m³), the figure used on the bill.
-- Each session's lifetime is recorded and shown in the entry diagnostics. Keep-alive every 10 minutes.
-- Service `canal_de_isabel_ii.set_session`, to hand the integration a new session from outside.
-- **Session helper**: a browser in a container where you log in to the virtual office yourself; it then hands the session to the integration and watches it. Available as a Docker image (`ghcr.io/miguelangel-nubla/canal-session-helper`) and as a Home Assistant add-on from https://github.com/miguelangel-nubla/hassio-repository. See `canal-session-helper/`.
-- Translations (English, Spanish), tolerant CSV parsing, tests and CI.
+- With several contracts on one account, only the one the portal shows selected is read.

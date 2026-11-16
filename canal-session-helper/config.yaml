@@ -1,5 +1,5 @@
 name: Canal de Isabel II session helper
-version: 2026.11.0
+version: 2026.11.1
 slug: canal-session-helper
 description: A browser where you log in to the Canal de Isabel II virtual office;
   it keeps the session and hands it to the integration
