@@ -1,6 +1,6 @@
 ---
 channel: stable
-addons:
+apps:
   step-ca-client:
     repository: miguelangel-nubla/hassio-step-ca-client
     target: step-ca-client
