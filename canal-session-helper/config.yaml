@@ -1,5 +1,5 @@
 name: "Ayudante de sesi\xF3n del Canal de Isabel II"
-version: 2026.11.4
+version: 2026.11.5
 slug: canal-session-helper
 description: "Navegador que inicia sesi\xF3n en la oficina virtual del Canal de Isabel\
   \ II, mantiene la sesi\xF3n y se la entrega a la integraci\xF3n"

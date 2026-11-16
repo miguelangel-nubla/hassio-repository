@@ -1,15 +1,10 @@
-## Automatic login
+## Fixed
 
-The session helper now logs in to the virtual office by itself. Give it your document and password and it logs in at start and every time the portal ends the session, so the integration keeps running without anyone having to step in (#15).
+- **Session helper: the automatic login did not work on a first start.** In a browser that had never answered it, the portal's cookie dialog covered the login button, so the login was never sent and the helper reported that the portal did not answer. The helper now answers the dialog with "Permitir todas las cookies" before logging in (#17).
 
-- **Add-on:** fill in `document` and `password` (and `profile` if it is not `particular`) in the add-on's configuration.
-- **Container:** set `CANAL_DOCUMENT` and `CANAL_PASSWORD` (or `CANAL_PASSWORD_FILE`), and `CANAL_PROFILE` if needed.
-- Without credentials the helper works as before: you log in by hand in its browser.
+If you set up automatic login with 2026.11.4 and got the notification asking you to log in by hand, update the helper: it logs in on its next start.
 
-The login form runs an invisible captcha, which the helper neither answers nor avoids. When a login does not go through, a Home Assistant notification says why and you can log in by hand in the helper's browser:
+## Documentation
 
-- A login the portal refuses is retried after 1 hour and after 6 more, then no more until the credentials change or you log in by hand, so a wrong password cannot lock the account.
-- A captcha challenge is left on screen for you and the login is retried an hour later.
-- If the portal does not answer, the login is retried after 5, 15 and 30 minutes, then hourly.
-
-Details in the [helper's guide](https://github.com/miguelangel-nubla/homeassistant_canal_isabel_II/blob/main/canal-session-helper/DOCS.md).
+- Buttons that open the right page of your Home Assistant: add the integration, add the app repository, open the app, the Energy configuration.
+- How to read the helper's log to check that the automatic login works.
