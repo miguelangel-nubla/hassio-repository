@@ -1,17 +1,22 @@
-## One automatic setup
+## New entities
 
-The integration now asks for your document, password and profile of the virtual office when you add it, and the session helper logs in with them whenever the integration is about to read data. Nothing else has to be configured, and you only step in when the portal asks for a captcha or refuses the login (#18).
+The Canal publishes consumption with half a day to a day of delay, so the sensor with the liters of the last hour never said much. Each contract now has entities that describe the last day published in full (#20, #21):
 
-- **Sessions on demand.** The helper logs in only when data is due, about twice a day, instead of both sides checking the portal every 10 minutes to keep a session alive.
-- **Problems are shown by Home Assistant.** A refused login asks for your credentials again; a captcha, a portal that does not answer or a helper that is not running appear under Repairs and clear by themselves.
-- **The helper has no settings about your account.** As a Home Assistant app it needs no configuration; as a container, only `HA_URL`, the token and the VNC password.
+| Entity | Shows |
+|---|---|
+| **Consumo del último día** | Liters of the last full day, with its date as an attribute |
+| **Caudal mínimo del último día** | The quietest hour of that day, in L/h. Close to 0 in a house without leaks |
+| **Posible fuga** | On when the meter has not rested for a single hour in the last 48 published hours |
+| **Datos hasta** | Up to when the Canal has published readings |
 
-## Upgrading (breaking)
+- **Posible fuga** can be tuned for each contract, in the configuration section of its device: the flow that counts as rest (1 L/h by default) and the hours without rest that raise it (48 by default). With data a day late it finds the leaks that last, such as a dripping cistern, not a burst pipe.
+- The hourly sensor is now called **Consumo de la última hora** and is off by default in new installs. If you already had it, it stays on with the same entity id.
+- The meter reading and the hourly statistic for the Energy panel are unchanged.
 
-Update the integration and the session helper **together**.
+## Fixed
 
-- Home Assistant will ask once for your document and password. Your history is kept.
-- The helper's options `document`, `password`, `profile`, `entry_id` and `check_interval` (`CANAL_DOCUMENT`, `CANAL_PASSWORD`, `CANAL_PASSWORD_FILE`, `CANAL_PROFILE`, `HA_ENTRY_ID`, `CHECK_INTERVAL`) are gone: remove them from your compose file.
-- Setting the integration up by pasting a `JSESSIONID` cookie is no longer offered. The session helper is required.
+- After the portal refused a login, the notice of an earlier failed try stayed next to the request for the credentials (#19).
+- The notices link to the session helper's browser with a readable link instead of a bare address (#19).
+- Session helper: no double period in its log when the portal's message ends in one.
 
-Setup is described in the [README](https://github.com/miguelangel-nubla/homeassistant_canal_isabel_II#configuración) and the [helper's guide](https://github.com/miguelangel-nubla/homeassistant_canal_isabel_II/blob/main/canal-session-helper/DOCS.md).
+No changes to the setup: update the integration, restart Home Assistant, and update the session helper when convenient.
