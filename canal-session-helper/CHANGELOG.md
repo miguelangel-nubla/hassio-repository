@@ -1,20 +1,16 @@
-## Integration
+## Integración
 
-- A setup that cannot read the portal now loads anyway, keeps the session alive and tries again in 10 minutes, instead of retrying the whole setup every minute or so.
-- The periodic download no longer stops when there are no sensors, and the sensors appear when data first arrives.
-- Only a redirect to the login page counts as the end of a session. Other answers from the portal (maintenance, errors) no longer mark a live session as ended.
-- Adding or renewing a session now tells "the portal did not accept it" apart from "the portal could not be reached". Renewing no longer downloads the whole year again.
-- Two downloads in a row no longer restart the running total.
-- Errors while asking for hourly data or downloading the CSV are reported instead of importing nothing.
-- Canal de Isabel II icon and logo.
+- Los sensores se llaman ahora **Consumo** y **Lectura del contador** en Home Assistant en español (en inglés siguen igual). Los sensores que ya tenías conservan su identificador.
+- Los errores del servicio `canal_de_isabel_ii.set_session` se muestran en español.
 
-## Session helper (container and add-on)
+## Ayudante de sesión
 
-- The session survives a restart of the container or the browser.
-- Waiting for a login no longer reloads the page every few seconds, and the "login needed" notification is retried if Home Assistant was not reachable.
-- As an add-on, only Home Assistant itself can reach the logged-in browser.
-- A restarted container starts cleanly.
+- El complemento se llama ahora **Ayudante de sesión del Canal de Isabel II**, y su notificación para iniciar sesión está en español.
+- La imagen lleva su descripción, la misma que el complemento.
 
-## Known limitations
+## Documentación
 
-- With several contracts on one account, only the one the portal shows selected is read.
+- Reescrita y reorganizada: el README explica la integración; la guía del ayudante (complemento y Docker) está en `canal-session-helper/DOCS.md`.
+- Instalación desde el Marketplace de Home Assistant.
+
+A partir de esta versión las etiquetas de las versiones llevan una `v` delante (`v2026.11.2`).

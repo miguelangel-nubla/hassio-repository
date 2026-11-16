@@ -1,8 +1,8 @@
-name: Canal de Isabel II session helper
-version: 2026.11.1
+name: "Ayudante de sesi\xF3n del Canal de Isabel II"
+version: 2026.11.2
 slug: canal-session-helper
-description: A browser where you log in to the Canal de Isabel II virtual office;
-  it keeps the session and hands it to the integration
+description: "Navegador en el que inicias sesi\xF3n en la oficina virtual del Canal\
+  \ de Isabel II; mantiene la sesi\xF3n y se la entrega a la integraci\xF3n"
 url: https://github.com/miguelangel-nubla/homeassistant_canal_isabel_II
 arch:
 - aarch64

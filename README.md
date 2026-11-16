@@ -19,7 +19,7 @@ compared to installing any other Home Assistant add-on.
 
 ## Add-ons provided by this repository
 
-### &#10003; [Canal de Isabel II session helper][addon-canal-session-helper]
+### &#10003; [Ayudante de sesión del Canal de Isabel II][addon-canal-session-helper]
 
 ![Latest Version][canal-session-helper-version-shield]
 ![Supports armhf Architecture][canal-session-helper-armhf-shield]
@@ -28,9 +28,9 @@ compared to installing any other Home Assistant add-on.
 ![Supports amd64 Architecture][canal-session-helper-amd64-shield]
 ![Supports i386 Architecture][canal-session-helper-i386-shield]
 
-A browser where you log in to the Canal de Isabel II virtual office; it keeps the session and hands it to the integration
+Navegador en el que inicias sesión en la oficina virtual del Canal de Isabel II; mantiene la sesión y se la entrega a la integración
 
-[:books: Canal de Isabel II session helper add-on documentation][addon-doc-canal-session-helper]
+[:books: Ayudante de sesión del Canal de Isabel II add-on documentation][addon-doc-canal-session-helper]
 
 ### &#10003; [step-ca-client][addon-step-ca-client]
 
@@ -63,7 +63,7 @@ You could open an issue here on GitHub. Note, we use a separate
 GitHub repository for each add-on. Please ensure you are creating the issue
 on the correct GitHub repository matching the add-on.
 
-- [Open an issue for the add-on: Canal de Isabel II session helper][canal-session-helper-issue]
+- [Open an issue for the add-on: Ayudante de sesión del Canal de Isabel II][canal-session-helper-issue]
 - [Open an issue for the add-on: step-ca-client][step-ca-client-issue]
 
 For a general repository issue or add-on ideas [open an issue here][issue]
@@ -96,10 +96,10 @@ SOFTWARE.
 
 [addon-add-repo]: https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2Fmiguelangel-nubla%2Fhassio-repository
 [addon-add-repo-badge]: https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg
-[addon-canal-session-helper]: https://github.com/miguelangel-nubla/homeassistant_canal_isabel_II/tree/v2026.11.1/canal-session-helper
-[addon-doc-canal-session-helper]: https://github.com/miguelangel-nubla/homeassistant_canal_isabel_II/blob/v2026.11.1/canal-session-helper/DOCS.md
+[addon-canal-session-helper]: https://github.com/miguelangel-nubla/homeassistant_canal_isabel_II/tree/v2026.11.2/canal-session-helper
+[addon-doc-canal-session-helper]: https://github.com/miguelangel-nubla/homeassistant_canal_isabel_II/blob/v2026.11.2/canal-session-helper/DOCS.md
 [canal-session-helper-issue]: https://github.com/miguelangel-nubla/homeassistant_canal_isabel_II/issues
-[canal-session-helper-version-shield]: https://img.shields.io/badge/version-v2026.11.1-blue.svg
+[canal-session-helper-version-shield]: https://img.shields.io/badge/version-v2026.11.2-blue.svg
 [canal-session-helper-aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [canal-session-helper-amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
 [canal-session-helper-armhf-shield]: https://img.shields.io/badge/armhf-no-red.svg
