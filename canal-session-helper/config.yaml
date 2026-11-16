@@ -1,8 +1,8 @@
 name: "Ayudante de sesi\xF3n del Canal de Isabel II"
-version: 2026.11.3
+version: 2026.11.4
 slug: canal-session-helper
-description: "Navegador en el que inicias sesi\xF3n en la oficina virtual del Canal\
-  \ de Isabel II; mantiene la sesi\xF3n y se la entrega a la integraci\xF3n"
+description: "Navegador que inicia sesi\xF3n en la oficina virtual del Canal de Isabel\
+  \ II, mantiene la sesi\xF3n y se la entrega a la integraci\xF3n"
 url: https://github.com/miguelangel-nubla/homeassistant_canal_isabel_II
 arch:
 - aarch64
@@ -14,9 +14,15 @@ panel_icon: mdi:water
 panel_title: Canal de Isabel II
 homeassistant_api: true
 options:
+  document: ''
+  password: ''
+  profile: particular
   check_interval: 600
   entry_id: ''
 schema:
+  document: str?
+  password: password?
+  profile: list(particular|empresa|administrador|entidad_publica)?
   check_interval: int(60,3600)
   entry_id: str?
 image: ghcr.io/miguelangel-nubla/canal-session-helper
