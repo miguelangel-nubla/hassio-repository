@@ -28,7 +28,7 @@ compared to installing any other Home Assistant add-on.
 ![Supports amd64 Architecture][canal-session-helper-amd64-shield]
 ![Supports i386 Architecture][canal-session-helper-i386-shield]
 
-Navegador que inicia sesión en la oficina virtual del Canal de Isabel II, mantiene la sesión y se la entrega a la integración
+Navegador que inicia sesión en la oficina virtual del Canal de Isabel II cuando la integración lo necesita
 
 [:books: Ayudante de sesión del Canal de Isabel II add-on documentation][addon-doc-canal-session-helper]
 
@@ -96,10 +96,10 @@ SOFTWARE.
 
 [addon-add-repo]: https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2Fmiguelangel-nubla%2Fhassio-repository
 [addon-add-repo-badge]: https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg
-[addon-canal-session-helper]: https://github.com/miguelangel-nubla/homeassistant_canal_isabel_II/tree/v2026.11.5/canal-session-helper
-[addon-doc-canal-session-helper]: https://github.com/miguelangel-nubla/homeassistant_canal_isabel_II/blob/v2026.11.5/canal-session-helper/DOCS.md
+[addon-canal-session-helper]: https://github.com/miguelangel-nubla/homeassistant_canal_isabel_II/tree/v2026.11.6/canal-session-helper
+[addon-doc-canal-session-helper]: https://github.com/miguelangel-nubla/homeassistant_canal_isabel_II/blob/v2026.11.6/canal-session-helper/DOCS.md
 [canal-session-helper-issue]: https://github.com/miguelangel-nubla/homeassistant_canal_isabel_II/issues
-[canal-session-helper-version-shield]: https://img.shields.io/badge/version-v2026.11.5-blue.svg
+[canal-session-helper-version-shield]: https://img.shields.io/badge/version-v2026.11.6-blue.svg
 [canal-session-helper-aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [canal-session-helper-amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
 [canal-session-helper-armhf-shield]: https://img.shields.io/badge/armhf-no-red.svg
