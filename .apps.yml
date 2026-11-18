@@ -9,3 +9,7 @@ apps:
     repository: miguelangel-nubla/homeassistant_canal_isabel_II
     target: canal-session-helper
     image: ghcr.io/miguelangel-nubla/canal-session-helper
+  ipv6ddns:
+    repository: miguelangel-nubla/ipv6ddns
+    target: homeassistant/addon
+    image: ghcr.io/miguelangel-nubla/ipv6ddns-addon
