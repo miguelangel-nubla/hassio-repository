@@ -119,10 +119,10 @@ SOFTWARE.
 [canal-session-helper-armhf-shield]: https://img.shields.io/badge/armhf-no-red.svg
 [canal-session-helper-armv7-shield]: https://img.shields.io/badge/armv7-no-red.svg
 [canal-session-helper-i386-shield]: https://img.shields.io/badge/i386-no-red.svg
-[addon-ipv6ddns]: https://github.com/miguelangel-nubla/ipv6ddns/tree/v0.19.1/ipv6ddns
-[addon-doc-ipv6ddns]: https://github.com/miguelangel-nubla/ipv6ddns/blob/v0.19.1/ipv6ddns/DOCS.md
+[addon-ipv6ddns]: https://github.com/miguelangel-nubla/ipv6ddns/tree/v0.20.0/ipv6ddns
+[addon-doc-ipv6ddns]: https://github.com/miguelangel-nubla/ipv6ddns/blob/v0.20.0/ipv6ddns/DOCS.md
 [ipv6ddns-issue]: https://github.com/miguelangel-nubla/ipv6ddns/issues
-[ipv6ddns-version-shield]: https://img.shields.io/badge/version-v0.19.1-blue.svg
+[ipv6ddns-version-shield]: https://img.shields.io/badge/version-v0.20.0-blue.svg
 [ipv6ddns-aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [ipv6ddns-amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
 [ipv6ddns-armhf-shield]: https://img.shields.io/badge/armhf-no-red.svg
