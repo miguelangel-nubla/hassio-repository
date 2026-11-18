@@ -32,6 +32,19 @@ Navegador que inicia sesión en la oficina virtual del Canal de Isabel II cuando
 
 [:books: Ayudante de sesión del Canal de Isabel II add-on documentation][addon-doc-canal-session-helper]
 
+### &#10003; [ipv6ddns][addon-ipv6ddns]
+
+![Latest Version][ipv6ddns-version-shield]
+![Supports armhf Architecture][ipv6ddns-armhf-shield]
+![Supports armv7 Architecture][ipv6ddns-armv7-shield]
+![Supports aarch64 Architecture][ipv6ddns-aarch64-shield]
+![Supports amd64 Architecture][ipv6ddns-amd64-shield]
+![Supports i386 Architecture][ipv6ddns-i386-shield]
+
+Keeps the DNS records of the devices of your network, found by their MAC address, wherever their IPv6 and IPv4 addresses move
+
+[:books: ipv6ddns add-on documentation][addon-doc-ipv6ddns]
+
 ### &#10003; [step-ca-client][addon-step-ca-client]
 
 ![Latest Version][step-ca-client-version-shield]
@@ -64,6 +77,7 @@ GitHub repository for each add-on. Please ensure you are creating the issue
 on the correct GitHub repository matching the add-on.
 
 - [Open an issue for the add-on: Ayudante de sesión del Canal de Isabel II][canal-session-helper-issue]
+- [Open an issue for the add-on: ipv6ddns][ipv6ddns-issue]
 - [Open an issue for the add-on: step-ca-client][step-ca-client-issue]
 
 For a general repository issue or add-on ideas [open an issue here][issue]
@@ -105,6 +119,15 @@ SOFTWARE.
 [canal-session-helper-armhf-shield]: https://img.shields.io/badge/armhf-no-red.svg
 [canal-session-helper-armv7-shield]: https://img.shields.io/badge/armv7-no-red.svg
 [canal-session-helper-i386-shield]: https://img.shields.io/badge/i386-no-red.svg
+[addon-ipv6ddns]: https://github.com/miguelangel-nubla/ipv6ddns/tree/v0.19.0/ipv6ddns
+[addon-doc-ipv6ddns]: https://github.com/miguelangel-nubla/ipv6ddns/blob/v0.19.0/ipv6ddns/DOCS.md
+[ipv6ddns-issue]: https://github.com/miguelangel-nubla/ipv6ddns/issues
+[ipv6ddns-version-shield]: https://img.shields.io/badge/version-v0.19.0-blue.svg
+[ipv6ddns-aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
+[ipv6ddns-amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
+[ipv6ddns-armhf-shield]: https://img.shields.io/badge/armhf-no-red.svg
+[ipv6ddns-armv7-shield]: https://img.shields.io/badge/armv7-no-red.svg
+[ipv6ddns-i386-shield]: https://img.shields.io/badge/i386-no-red.svg
 [addon-step-ca-client]: https://github.com/miguelangel-nubla/hassio-step-ca-client/tree/v1.0.4/step-ca-client
 [addon-doc-step-ca-client]: https://github.com/miguelangel-nubla/hassio-step-ca-client/blob/v1.0.4/step-ca-client/DOCS.md
 [step-ca-client-issue]: https://github.com/miguelangel-nubla/hassio-step-ca-client/issues
