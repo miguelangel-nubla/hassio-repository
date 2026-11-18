@@ -1,3 +1,3 @@
 ## Changelog
-* 0e750adf92793228cc4b64a6d2e377aa6252eb9d feat: a Home Assistant add-on
+* a94a8d28ae538d7f1d4286aad9b35eeec0efe114 fix(addon): leave Home Assistant's bridges out, and the folder's two names
 
