@@ -1,5 +1,5 @@
 name: ipv6ddns
-version: 0.20.0
+version: 0.21.0
 slug: ipv6ddns
 description: Keeps the DNS records of the devices of your network, found by their
   MAC address, wherever their IPv6 and IPv4 addresses move
