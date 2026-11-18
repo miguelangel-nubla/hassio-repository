@@ -1,13 +1,27 @@
 ---
 name: Repository Updater
 
+# Three ways to publish the apps' new versions:
+# - an app's own release dispatches "update" with its slug, at once (needs a token there);
+# - every day, every app is checked, so an app needs no token to be published;
+# - by hand, for one app or all of them.
 # yamllint disable-line rule:truthy
 on:
   repository_dispatch:
     types: ["update"]
+  schedule:
+    - cron: "17 5 * * *"
+  workflow_dispatch:
+    inputs:
+      app:
+        description: The slug of the app to check; empty, all of them
+        required: false
+        type: string
 
 jobs:
   workflows:
     uses: miguelangel-nubla/hassio-workflows/.github/workflows/repository-updater.yaml@main
+    with:
+      app: ${{ inputs.app || '' }}
     secrets:
       UPDATER_TOKEN: ${{ secrets.UPDATER_TOKEN }}
