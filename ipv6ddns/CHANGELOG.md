@@ -1,3 +1,3 @@
 ## Changelog
-* f84adc0ccb69b4c4d8501462b137baac8c4f4ed0 feat: webserver.listen and homeassistant.listen, with one set of entries
+* 8438c708d1322d9327c66147fab95443376b11e8 fix(source): a homeassistant source waits while Home Assistant restarts
 
