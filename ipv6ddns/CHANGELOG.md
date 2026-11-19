@@ -1,3 +1,3 @@
 ## Changelog
-* 9c0798489d7c660326115c6a702ac92629463d3e fix(esphome): one mDNS server, answering on each interface with its own addresses
+* f84adc0ccb69b4c4d8501462b137baac8c4f4ed0 feat: webserver.listen and homeassistant.listen, with one set of entries
 
