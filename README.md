@@ -41,7 +41,7 @@ Navegador que inicia sesión en la oficina virtual del Canal de Isabel II cuando
 ![Supports amd64 Architecture][ipv6ddns-amd64-shield]
 ![Supports i386 Architecture][ipv6ddns-i386-shield]
 
-Keeps the DNS records of the devices of your network, found by their MAC address, wherever their IPv6 and IPv4 addresses move
+DNS names for every device on your network, wherever its addresses move: at your DNS provider, at your router, or answered by its own DNS server
 
 [:books: ipv6ddns add-on documentation][addon-doc-ipv6ddns]
 
@@ -119,10 +119,10 @@ SOFTWARE.
 [canal-session-helper-armhf-shield]: https://img.shields.io/badge/armhf-no-red.svg
 [canal-session-helper-armv7-shield]: https://img.shields.io/badge/armv7-no-red.svg
 [canal-session-helper-i386-shield]: https://img.shields.io/badge/i386-no-red.svg
-[addon-ipv6ddns]: https://github.com/miguelangel-nubla/ipv6ddns/tree/v0.22.3/ipv6ddns
-[addon-doc-ipv6ddns]: https://github.com/miguelangel-nubla/ipv6ddns/blob/v0.22.3/ipv6ddns/DOCS.md
+[addon-ipv6ddns]: https://github.com/miguelangel-nubla/ipv6ddns/tree/v0.23.0/ipv6ddns
+[addon-doc-ipv6ddns]: https://github.com/miguelangel-nubla/ipv6ddns/blob/v0.23.0/ipv6ddns/DOCS.md
 [ipv6ddns-issue]: https://github.com/miguelangel-nubla/ipv6ddns/issues
-[ipv6ddns-version-shield]: https://img.shields.io/badge/version-v0.22.3-blue.svg
+[ipv6ddns-version-shield]: https://img.shields.io/badge/version-v0.23.0-blue.svg
 [ipv6ddns-aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [ipv6ddns-amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
 [ipv6ddns-armhf-shield]: https://img.shields.io/badge/armhf-no-red.svg

@@ -1,8 +1,8 @@
 name: ipv6ddns
-version: 0.22.3
+version: 0.23.0
 slug: ipv6ddns
-description: Keeps the DNS records of the devices of your network, found by their
-  MAC address, wherever their IPv6 and IPv4 addresses move
+description: 'DNS names for every device on your network, wherever its addresses move:
+  at your DNS provider, at your router, or answered by its own DNS server'
 url: https://github.com/miguelangel-nubla/ipv6ddns
 arch:
 - aarch64
@@ -17,8 +17,4 @@ ingress: true
 ingress_port: 8053
 panel_icon: mdi:dns
 panel_title: ipv6ddns
-options:
-  log_level: info
-schema:
-  log_level: list(debug|info|warn|error)
 image: ghcr.io/miguelangel-nubla/ipv6ddns-addon
