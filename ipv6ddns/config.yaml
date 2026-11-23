@@ -1,5 +1,5 @@
 name: ipv6ddns
-version: 0.25.2
+version: 0.25.3
 slug: ipv6ddns
 description: 'DNS names for every device on your network, wherever its addresses move:
   at your DNS provider, at your router, or answered by its own DNS server'
