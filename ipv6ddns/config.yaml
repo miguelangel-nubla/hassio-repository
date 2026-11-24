@@ -1,5 +1,5 @@
 name: ipv6ddns
-version: 0.27.0
+version: 0.28.0
 slug: ipv6ddns
 description: 'DNS names for every device on your network, wherever its addresses move:
   at your DNS provider, at your router, or answered by its own DNS server'
@@ -13,6 +13,7 @@ privileged:
 - NET_RAW
 map:
 - addon_config:rw
+- ssl
 ingress: true
 ingress_port: 8053
 panel_icon: mdi:dns

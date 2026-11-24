@@ -135,3 +135,50 @@ can read your routers' tables as well.
 The starting configuration leaves out the bridges of Home Assistant's own
 containers, `hassio`, `docker0` and `veth*`, with
 `discovery.exclude_interfaces`. Keep that setting.
+
+## Encrypted DNS
+
+The resolver can answer the network over DNS over TLS, HTTPS and QUIC, with a
+certificate:
+[encrypted DNS for the clients](https://github.com/miguelangel-nubla/ipv6ddns/blob/main/docs/resolver.md#encrypted-dns-for-the-clients).
+The app reads Home Assistant's `ssl` folder, where the Let's Encrypt app
+writes its certificates, at `/ssl`:
+
+```yaml
+resolvers:
+  lan:
+    listen:
+      - 192.168.1.0/24
+      - tls://192.168.1.0/24
+    tls: home
+    upstream:
+      - 192.168.1.1
+
+certificates:
+  home:
+    certificate: /ssl/fullchain.pem
+    key: /ssl/privkey.pem
+```
+
+The certificate must be for the name the clients use, such as
+`dns.lan.example.com`: ask the Let's Encrypt app for it with its DNS
+challenge. Or let ipv6ddns get it and renew it itself, with
+[`acme`](https://github.com/miguelangel-nubla/ipv6ddns/blob/main/docs/resolver.md#a-certificate-from-lets-encrypt):
+it then keeps it in the app's folder. Port 443 may be taken on the Home Assistant machine, by an app
+such as NGINX: give DNS over HTTPS another port, as
+`https://192.168.1.2:8443`, the machine's address with the port.
+
+## A router's updates
+
+A [push source](https://github.com/miguelangel-nubla/ipv6ddns/blob/main/docs/sources.md#a-routers-updates)
+takes the addresses your router sends, as to a DynDNS service, through the
+web server. The starting configuration serves the web server to Home
+Assistant alone: add the machine's address on the LAN, for the router to
+reach it.
+
+```yaml
+webserver:
+  listen:
+    - 172.30.32.1:8053
+    - 192.168.1.2:8053
+```
