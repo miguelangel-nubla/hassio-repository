@@ -1,8 +1,9 @@
 name: ipv6ddns
-version: 0.28.0
+version: 0.29.0
 slug: ipv6ddns
-description: 'DNS names for every device on your network, wherever its addresses move:
-  at your DNS provider, at your router, or answered by its own DNS server'
+description: 'DNS names for every device on your network, on the LAN and on the internet,
+  wherever its addresses move: at your DNS provider, at your router, or answered by
+  its own DNS server'
 url: https://github.com/miguelangel-nubla/ipv6ddns
 arch:
 - aarch64
