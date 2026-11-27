@@ -43,11 +43,19 @@ of ipv6ddns describes the file.
   The starting configuration has it at `info`.
 
 Keep these lines of the starting configuration. They serve the report on
-[the app's page](#the-apps-page):
+[the app's page](#the-apps-page). A configuration from before 0.30.0 has them
+as `webserver:`, with its `listen`, which the app now refuses: write them as
+here, the address in a listener, as `http://`, that the web server names.
 
 ```yaml
-webserver:
-  listen: 172.30.32.1:8053
+listeners:
+  app:
+    listen:
+      - http://172.30.32.1:8053
+webservers:
+  main:
+    listeners:
+      - app
 ```
 
 ## Publishing Home Assistant itself
@@ -127,7 +135,7 @@ the hosts discovered.
 
 The report is served to Home Assistant only, not to your network. It's served
 at `172.30.32.1:8053`, the address where Home Assistant's Supervisor reaches
-the app. `webserver.listen` in the starting `config.yaml` sets that address.
+the app. The listener `app` in the starting `config.yaml` sets that address.
 
 ## Network
 
@@ -150,12 +158,16 @@ The app reads Home Assistant's `ssl` folder, where the Let's Encrypt app
 writes its certificates, at `/ssl`:
 
 ```yaml
-resolvers:
+listeners:
   lan:
     listen:
-      - 192.168.1.0/24
+      - dns://192.168.1.0/24
       - tls://192.168.1.0/24
     tls: home
+resolvers:
+  lan:
+    listeners:
+      - lan
     upstream:
       - 192.168.1.1
 
@@ -182,8 +194,13 @@ Assistant alone: add the machine's address on the LAN, for the router to
 reach it.
 
 ```yaml
-webserver:
-  listen:
-    - 172.30.32.1:8053
-    - 192.168.1.2:8053
+listeners:
+  app:
+    listen:
+      - http://172.30.32.1:8053
+      - http://192.168.1.2:8053
+webservers:
+  main:
+    listeners:
+      - app
 ```
